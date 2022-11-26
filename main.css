@@ -1,0 +1,51 @@
+
+.social-bar{
+   
+    position: fixed;
+   left: 20px;
+    top: 35%;
+    font-size:3em;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon{
+   
+    text-decoration: none;
+    padding: 0pt7em;
+    display: flex;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.icon-facebook2{
+    background: #1d2c53;
+}
+.icon-twitter{
+    background: #38cfdc;
+}
+.icon-whatsapp{
+    background: #04b407;
+}
+.icon-instagram{
+    background: #940c55;
+}
+.icon:first-child{
+    border-radius: 1rem 1rem 1rem 1rem ;
+    -webkit-border-radius: 1rem 1rem 1rem 1rem ;
+    -moz-border-radius: 1rem 1rem 1rem 1rem ;
+    -ms-border-radius: 1rem 1rem 1rem 1rem ;
+    -o-border-radius: 1rem 1rem 1rem 1rem ;
+}
+.icon:last-child{
+    border-radius: 1rem 1rem 1rem 1rem;
+    -webkit-border-radius: 1rem 1rem 1rem 1rem;
+    -moz-border-radius: 1rem 1rem 1rem 1rem;
+    -ms-border-radius: 1rem 1rem 1rem 1rem;
+    -o-border-radius: 1rem 1rem 1rem 1rem;
+}
+.icon:hover{ padding-left: 3rem; border-radius:1rem 1rem  1rem  1rem ; -webkit-border-radius:1rem 1rem  1rem  1rem ; -moz-border-radius:1rem 1rem  1rem  1rem ; -ms-border-radius:1rem 1rem  1rem  1rem ; -o-border-radius:1rem 1rem  1rem  1rem ; box-shadow: 0 0 5rem rgba(0,0,5,42);
+}

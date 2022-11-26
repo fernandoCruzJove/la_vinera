@@ -1,0 +1,20 @@
+.video-container
+{
+  position:static;
+  z-index: -100;
+  top:0;
+  left:0;
+  width: 100%;
+  height:calc(60vw* 0.5 ); /*El alto se calcula*/
+
+  overflow: hidden;   
+
+}
+
+.video-container video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;  
+}

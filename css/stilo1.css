@@ -1,0 +1,338 @@
+.ejemplo-1 img {
+    transition: all 0.2s linear;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+.ejemplo-1 .mascara {
+    border-radius: 80px;
+    opacity: 0;
+    background-color: #e66000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+.ejemplo-1 h2 {
+    width: 100px;
+    transform: translateX(-200px);
+    /*Desplazamosalaizquierda*/opacity: 0;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-1 p {
+    transform: translateX(200px);
+    /*Desplazamosaladerecha*/
+    opacity: 0;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.ejemplo-1 a.link {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(100px)
+        /*Desplazamos para abajo*/
+    ;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-1:hover img {
+    transform: scale(1.3);
+    /*Damosunligerozoomalaimagen*/
+    : ;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.ejemplo-1:hover .mascara {
+    opacity: 1;
+}
+
+.ejemplo-1:hover h2,
+.ejemplo-1:hover p,
+.ejemplo-1:hover a.link {
+    opacity: 1;
+    transform: translateX(0px);
+    /*Regresamos a las posiciones originales*/
+}
+
+.ejemplo-1:hover p {
+    transition-delay: 0.1s;
+}
+
+.ejemplo-1:hover a.link {
+    transition-delay: 0.2s;
+    /*Aplicamos un pequeño retardo para que se muestre al final*/
+    transform: translateY(0px);
+}
+
+/*Ejemplo 2*/
+.ejemplo-2 img {
+    transition: all 0.2s ease-in;
+}
+
+.ejemplo-2 .mascara {
+    background-color: rgba(25, 96, 184, 0.8);
+    width: 100px;
+    padding: 60px;
+    height: 100px;
+    opacity: 1;
+    transform: translate(300px, 200px) rotate(45deg);
+    /*Rotamos para dar efecto de diagonal y lo movemos por donde queremos que entre.*/
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-2 h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+    /*Desplazamos el título arriba a la derecha*/
+    transition: all 0.3s ease-in-out;
+}
+
+.ejemplo-2 p {
+    transform: translate(-200px, 200px);
+    /*Desplazamos la descripción abajo a la izquierda*/
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-2 a.link {
+    transform: translate(0px, 100px);
+    /*Desplazamos el link para abajo*/
+    transition: all 0.3s 0.1s ease-in-out;
+}
+
+.ejemplo-2:hover .mascara {
+    opacity: 1;
+    transform: translate(-96px, -120px) rotate(45deg);
+}
+
+.ejemplo-2:hover h2 {
+    transform: translate(0px, 0px);
+    transition-delay: 0.3s;
+}
+
+.ejemplo-2:hover p {
+    transform: translate(0px, 0px);
+    transition-delay: 0.4s;
+}
+
+.ejemplo-2:hover a.link {
+    transform: translate(0px, 0px);
+    transition-delay: 0.5s;
+}
+
+/*Ejemplo 3*/
+.ejemplo-3 img {
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-3 .mascara {
+    background-color: rgba(128, 96, 0, 0.5);
+    transform: translateX(-300px);
+    /*Desplazamos 300px a la izquierda*/
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-3 h2 {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+
+.ejemplo-3 p {
+    color: #333;
+}
+
+.ejemplo-3:hover .mascara {
+    transform: translateX(0px);
+    /*Regresamos a su posicioón original*/
+}
+
+.ejemplo-3:hover img {
+    transform: translateX(300px);
+    /*Desplazamos 300px a la derecha*/
+}
+
+.ejemplo-4 img {
+    transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;
+}
+
+.ejemplo-4 .mascara {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+    /*Rotamos 180grados y le damos tamaño 0*/
+    transition: all 0.4s ease-in;
+    border-radius: 0px;
+}
+
+.ejemplo-4 h2 {
+    opacity: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-4 p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-4 a.link {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-4:hover .mascara {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    /*Regresamos a su tamaño y posición original*/
+    transition-delay: 0.2s;
+}
+
+.ejemplo-4:hover img {
+    transform: scale(0);
+    /*Efecto zoom-out*/
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.ejemplo-4:hover h2,
+.ejemplo-4:hover p,
+.ejemplo-4:hover a.link {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/*Ejemplo 4-1*/
+.ejemplo-4-1 img {
+    transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;
+    transform-origin: 100% 100%;
+    /*Desde la esquina inferior derecha*/
+}
+
+.ejemplo-4-1 .mascara {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.2s;
+    transform-origin: 0% 0%;
+    /*Desde la esquina superior izquierda*/
+    transform: scale(0);
+}
+
+.ejemplo-4-1 h2 {
+    opacity: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-4-1 p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-4-1 a.link {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-4-1:hover .mascara {
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.ejemplo-4-1:hover img {
+    transform: scale(0);
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.ejemplo-4-1:hover h2,
+.ejemplo-4-1:hover p,
+.ejemplo-4-1:hover a.link {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+*Ejemplo 5*/ .ejemplo-5 img {
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+
+}
+
+.ejemplo-5 .mascara {
+    background-color: rgba(119, 80, 21, 0.9);
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+.ejemplo-5 h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #fff;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+.ejemplo-5 p {
+    color: #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
+.ejemplo-5 a.link {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    background-color: rgba(119, 80, 21, 0.9);
+}
+
+.ejemplo-5:hover img {
+    transform: scale(10);
+    opacity: 0;
+}
+
+.ejemplo-5:hover .mascara {
+    opacity: 1;
+}
+
+.ejemplo-5:hover h2,
+.ejemplo-5:hover p,
+.ejemplo-5:hover a.link {
+    transform: scale(1);
+    opacity: 1;
+}

@@ -1,0 +1,6 @@
+
+<div class="social-bar">
+  <a href="" class="icon icon-facebook2" target="_blank"></a>
+  <a href="" class="icon icon-instagram" target="_blank"></a>
+  <a href="" class="icon icon-whatsapp" target="_blank"></a>
+</div>

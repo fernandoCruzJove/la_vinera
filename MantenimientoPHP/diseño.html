@@ -1,0 +1,119 @@
+<html>
+<head>
+<style>
+
+input[type=button],input[type=submit]
+{
+background-color: white;
+border: none;
+color:black;
+font-weight: bold;
+padding: 6px 20px;
+text-align: center;
+font-size:16px;
+margin: 4px 4px;
+box-shadow: 3px 3px 3px black;
+position: center;
+font-family: Arial;
+}
+
+input[type="text"]
+{
+font-family: Arial;
+color:black;
+background-color:white;
+padding:4px;
+text-align: left;
+font-size: 16px;
+margin: 4px 4px;
+box-shadow: 2px 2px 2px black;
+}
+
+body
+{
+background-color: #338DFF;
+}
+
+label
+{
+font-family: Arial;
+padding: 4px;
+font-weight: bold;
+color: black;
+text-align: center;
+align:center;
+font-size: 18px;
+}
+
+table
+{
+background-color: #F0EFEF;
+padding: 5px 5px;
+}
+
+td
+{
+padding: 6px 4px;
+}
+
+</style>
+</head>
+
+<body>
+<center>
+<form name="Mantenimiento" action="mantenimiento.php" method="post">
+<table border="1">
+
+<tr>
+<td colspan="4"><label>Mantenimiento de Clientes</label></td>
+</tr>
+
+<tr><td colspan="4"><label>Registrar Cliente </label></td></tr>
+<tr>
+	<td><label>Codigo</label></td><td><input type="text" value="" maxlength="7" name="txtcodigo"></td>
+	<td><label>Edad</label></td><td><input type="text" value="" maxlength="2" name="txtedad" maxlength="2" size="10"></td>
+</tr>
+<tr>
+	<td><label>Nombre</label></td><td><input type="text" value="" maxlength="50" name="txtnombre"></td>
+	<td><label>Telefono</label></td><td><input type="text" value="" maxlength="9" size="10" name="txttelefono"></td>
+</tr>
+
+<tr><td colspan="4" align="center">
+<input type="submit" value="Nuevo" name="limpiardatos" >
+<input type="submit" value="Grabar" name="grabardatos" >
+<input type="submit" value="Modificar" name="modificardatos" >
+<input type="submit" value="Eliminar" name="eliminardatos">
+</td>
+</tr>
+
+<tr><td colspan="4"><label>Listado de Clientes </label></td></tr>
+
+<tr><td><label>Codigo</label></td>
+	<td><label>Nombre</label></td>
+	<td><label>Edad</label></td>
+	<td><label>Telefono</label></td>
+</tr>
+
+<?php 
+$sql="SELECT * FROM clientes";
+$result=mysqli_query($conn,$sql);
+
+while($mostrar=mysqli_fetch_array($result))
+{
+?>
+<tr> <td><?php echo $mostrar['codigo'] ?>
+	<td><?php echo $mostrar['nombre'] ?>
+	<td><?php echo $mostrar['edad'] ?>
+	<td><?php echo $mostrar['telefono'] ?>
+
+</tr>
+<?php
+}
+
+?>
+
+</table>
+</form>
+</center>
+</body>
+</html>
